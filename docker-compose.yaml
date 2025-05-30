@@ -8,7 +8,7 @@ services:
     networks:
       - monitoring
 
-  prometheus:
+  prometheus:  # fastapi-app:8000/metrics
     image: prom/prometheus:v2.37.0
     volumes:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
